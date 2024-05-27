@@ -1,0 +1,89 @@
+{
+    "size": {
+        "width": 2500,
+        "height": 1686
+    },
+    "selected": false,
+    "name": "test default rich menu",
+    "chatBarText": "選單",
+    "areas": [
+        {
+            "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 833,
+                "height": 843
+            },
+            "action": {
+                "type": "uri",
+                "label": "Tap area B",
+                "uri": "https://www.google.com"
+            }
+        },
+        {
+            "bounds": {
+                "x": 834,
+                "y": 0,
+                "width": 833,
+                "height": 843
+            },
+            "action": {
+                "type": "uri",
+                "label": "Tap area B",
+                "uri": "https://www.google.com"
+            }
+        },
+        {
+            "bounds": {
+                "x": 1667,
+                "y": 0,
+                "width": 833,
+                "height": 843
+            },
+            "action": {
+                "type": "uri",
+                "label": "Tap area C",
+                "uri": "https://www.google.com"
+            }
+        },
+        {
+            "bounds": {
+                "x": 0,
+                "y": 844,
+                "width": 833,
+                "height": 842
+            },
+            "action": {
+                "type": "uri",
+                "label": "Tap area D",
+                "uri": "https://www.google.com"
+            }
+        },
+        {
+            "bounds": {
+                "x": 834,
+                "y": 844,
+                "width": 833,
+                "height": 842
+            },
+            "action": {
+                "type": "uri",
+                "label": "Tap area E",
+                "uri": "https://www.google.com"
+            }
+        },
+        {
+            "bounds": {
+                "x": 1667,
+                "y": 844,
+                "width": 833,
+                "height": 842
+            },
+            "action": {
+                "type": "uri",
+                "label": "Tap area F",
+                "uri": "https://www.google.com"
+            }
+        }
+    ]
+}
