@@ -138,7 +138,7 @@ Here's an example of how to use the script:
 1. Create a rich menu from a configuration file:
 
     ```bash
-    python line_richmenu_manager.py -C rich_menu_configs/test.json
+    python line_richmenu_manager.py -C test.json
     ```
     **Expected output:**
     ```
@@ -146,7 +146,7 @@ Here's an example of how to use the script:
     ```
 2. Upload an image to the rich menu:
     ```bash
-    python line_richmenu_manager.py -U <rich_menu_id> images/menu_image.jpg
+    python line_richmenu_manager.py -U <rich_menu_id> menu_image.jpg
     ```
 
 3. List all rich menu IDs:
