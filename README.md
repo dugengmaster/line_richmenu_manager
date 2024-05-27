@@ -2,6 +2,22 @@
 
 This script allows you to manage LINE Rich Menus. You can create, upload images, list, delete, and set default rich menus for a LINE Bot.
 
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+  - [Create a Rich Menu](#create-a-rich-menu)
+  - [Upload an Image for a Specific Rich Menu](#upload-an-image-for-a-specific-rich-menu)
+  - [List All Available Rich Menu IDs](#list-all-available-rich-menu-ids)
+  - [List Detailed Information for All Available Rich Menus](#list-detailed-information-for-all-available-rich-menus)
+  - [Delete a Specific Rich Menu](#delete-a-specific-rich-menu)
+  - [Set a Specific Rich Menu as the Default](#set-a-specific-rich-menu-as-the-default)
+  - [Get the ID of the Currently Set Default Rich Menu](#get-the-id-of-the-currently-set-default-rich-menu)
+  - [Cancel the Currently Set Default Rich Menu](#cancel-the-currently-set-default-rich-menu)
+- [Example](#example)
+- [Contributing](#contributing)
+
 ## Prerequisites
 
 Make sure you have Python installed. You also need to install the `argparse` and `requests` modules if they are not already installed.
