@@ -3,7 +3,7 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser(description='Manage LINE Rich Menus. This script allows creating, uploading images, listing, deleting, and setting default rich menus for a LINE Bot.')
-    parser.add_argument('-C', '--create', metavar='rich_menu_config', help='Create a rich menu from a specified configuration file.')
+    parser.add_argument('-C', '--create', metavar='rich_menu_config_name', help='Create a rich menu from a specified configuration file.')
     parser.add_argument('-U', '--upload', nargs=2, metavar=('rich_menu_id', 'image_name'), help='Upload an image for a specific rich menu by providing its ID and the image file name.')
     parser.add_argument('-L', '--list-ids', action='store_true', help='List all available rich menu IDs.')
     parser.add_argument('-LD', '--list-details', action='store_true', help='List detailed information for all available rich menus.')
