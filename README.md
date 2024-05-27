@@ -57,31 +57,14 @@ Make sure you have Python installed. You also need to install the `argparse` and
     └── requirements.txt
     ```
 
-3. The `settings.py` file should look like this:
-    ```python
-    from pathlib import Path
-    import os
-    from dotenv import load_dotenv
-
-    BASE_DIR = Path(__file__).resolve().parent
-
-    env_path = os.path.join(BASE_DIR, ".env")
-    load_dotenv(env_path)
-
-    LINE_CHANNEL_ACCESS_TOKEN = os.getenv('LINE_CHANNEL_ACCESS_TOKEN')
-
-    CONFIGS_DIR = os.path.join(BASE_DIR, "rich_menu_configs")
-    IMAGES_DIR = os.path.join(BASE_DIR, "images")
-    ```
-
-4. Place your JSON configuration files for rich menus in the `rich_menu_configs` directory. For example, you might have a file named `test.json`:
+3. Place your JSON configuration files for rich menus in the `rich_menu_configs` directory. For example, you might have a file named `test.json`:
     ```
     line_richmenu_manager/
     ├── rich_menu_configs/
     │   └── test.json
     ```
 
-5. Place your JPEG image files for rich menus in the `images` directory. For example, you might have a file named `menu_image.jpg`:
+4. Place your JPEG image files for rich menus in the `images` directory. For example, you might have a file named `menu_image.jpg`:
     ```
     line_richmenu_manager/
     ├── images/
@@ -216,6 +199,20 @@ Here's an example of how to use the script:
 7. Cancel the currently set default rich menu:
     ```bash
     python line_richmenu_manager.py -cd <rich_menu_id>
+    ```
+
+### Error Handling
+
+Example error outputs you may encounter:
+
+1. If there is no image set to the rich menu (400 Bad Request):
+    ```python
+    (400, '[{"message": "must upload richmenu image before applying it to user", "details": []}]')
+    ```
+
+2. If you specify a non-existent rich menu (404 Not Found):
+    ```python
+    (404, '[{"message": "Not found"}]')
     ```
 ## Contributing
 
